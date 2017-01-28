@@ -1,0 +1,9 @@
+  /*background-image: url("http://www.planwallpaper.com/static/images/Light-Wood-Background-Wallpaper.jpg");*/
+  html, body {
+      height: 100%;
+      box-sizing: border-box;
+  }
+
+  *, *:before, *:after {
+      box-sizing: inherit;
+  }
