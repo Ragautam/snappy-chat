@@ -12,24 +12,13 @@
     <div class="member-area">
       <div class="user-info">
 
-        Gautam Radadiya
+        <span id="username"></span>
         <span class="logout">Log Out</span>
 
       </div>
 
-      <div class="members">
-        <div class="member active">
-          Dhruv
-        </div>
-        <div class="member">
-          Kirtan
-        </div>
-        <div class="member">
-          Tanik
-        </div>
-        <div class="member">
-          Dipesh
-        </div>
+      <div class="members" id="members">
+
       </div>
 
     </div>
@@ -38,73 +27,30 @@
       <div class="chat-info">
         Dhruv
       </div>
-      <div class="messages">
-        <div class="message">
-          hey
-        </div>
+      <div class="messages" id="messages">
 
-        <div class="message by-user">
-          I am learning webpage dev
-        </div>
-
-        <div class="message">
-          Wow! Where?
-        </div>
-
-        <div class="message by-user">
-          In LT2
-        </div>
-        <div class="message">
-          hey
-        </div>
-
-        <div class="message by-user">
-          I am learning webpage dev
-        </div>
-
-        <div class="message">
-          Wow! Where?
-        </div>
-
-        <div class="message by-user">
-          In LT2
-        </div>
-
-        <div class="message">
-          hey
-        </div>
-
-        <div class="message by-user">
-          I am learning webpage dev
-        </div>
-
-        <div class="message">
-          Wow! Where?
-        </div>
-
-        <div class="message by-user">
-          In LT2
-        </div>
-
-        <div class="message">
-          hey
-        </div>
-
-        <div class="message by-user">
-          I am learning webpage dev
-        </div>
-
-        <div class="message">
-          Wow! Where?
-        </div>
-
-        <div class="message by-user">
-          In LT2
-        </div>
       </div>
       <div class="chat-form">
-        <input type="text" class="chat-message" placeholder="Write your message and press enter..."/>
+        <inpit type="hidden" id="chat-id"/>
+        <input id="message-text" type="text" class="chat-message" placeholder="Write your message and press enter..."/>
+        <button id="send-button">Send</button>
       </div>
     </div>
+
+    <script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyC2L2r2v4des2lLP3-BAlmXDybRT3iK07E",
+        authDomain: "snnapy-1d756.firebaseapp.com",
+        databaseURL: "https://snnapy-1d756.firebaseio.com",
+        storageBucket: "snnapy-1d756.appspot.com",
+        messagingSenderId: "498954119422"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="function.js"></script>
+    <script type="text/javascript" src="app.js"></script>
+    <script type="text/javascript" src="chat.js"></script>
   </body>
   </html>

@@ -15,7 +15,23 @@
   <p class="tagline">
     An instance chat platform.
   </p>
-  <button class="button">Sign in with Google</button>
+  <button id="signin-button" class="button">Sign in with Google</button>
 </div>
+
+
+<script src="https://www.gstatic.com/firebasejs/3.6.7/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyC2L2r2v4des2lLP3-BAlmXDybRT3iK07E",
+    authDomain: "snnapy-1d756.firebaseapp.com",
+    databaseURL: "https://snnapy-1d756.firebaseio.com",
+    storageBucket: "snnapy-1d756.appspot.com",
+    messagingSenderId: "498954119422"
+  };
+  firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="function.js"></script>
+<script type="text/javascript" src="app.js"></script>
   </body>
 </html>
